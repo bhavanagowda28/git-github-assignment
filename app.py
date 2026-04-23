@@ -20,6 +20,8 @@ def api():
         data = json.load(f)
     return jsonify(data)
 
+# Backend route for todo submission 
+
 
 @app.route("/submittodoitem", methods=["POST"])
 def submit_todo():
