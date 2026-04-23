@@ -1,3 +1,4 @@
+
 from flask import Flask, jsonify, render_template, request
 from pymongo import MongoClient
 import json
@@ -19,6 +20,8 @@ def api():
     with open("data.json") as f:
         data = json.load(f)
     return jsonify(data)
+
+# Backend route for todo submission 
 
 
 @app.route("/submittodoitem", methods=["POST"])

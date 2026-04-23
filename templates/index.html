@@ -5,10 +5,16 @@
 </head>
 <body>
 
-<h1>Todo Form</h1>
-
-
+<h1>To do page</h1>
 <form action="/submittodoitem" method="POST">
+
+
+<label>Item UUID</label>
+<input type="text" name="itemUUID">
+
+<label>Item Hash</label>
+<input type="text" name="itemHash">
+
 
 <label>Item ID</label>
 <input type="text" name="itemId">
@@ -17,8 +23,10 @@
 <label>Item Name</label>
 <input type="text" name="itemName"><br><br>
 
+
 <label>Item Description</label>
 <input type="text" name="itemDescription"><br><br>
+
 
 <button type="submit">Submit</button>
 
@@ -26,5 +34,4 @@
 
 </body>
 </html>
-
 
